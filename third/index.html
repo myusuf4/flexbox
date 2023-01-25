@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .wrap{
+            display: grid;
+            height: 50vh;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(4,200px);
+            gap: 20px;
+        }
+        .box{
+            background-color: rgb(244, 232, 244);
+        }
+        .item{
+            grid-column: 1/4;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }   
+        .box-wrp{
+            display: flex;
+            gap: 2rem;
+        }
+        .link-box{
+            background-color: rgb(166, 162, 162);
+            width: 70px;
+            height: 10px;
+            border-radius: 30px;
+            
+        }
+        .item2{
+            grid-row: 2/5;
+        }
+        .item3{
+            grid-column: 2/4;
+            grid-row: 2/4
+        }
+        .item4{
+            grid-column: 2/4;
+        }
+
+    </style>
+    <div class="wrap">
+        <div class="box item">
+            <h1>Logo</h1>
+            <div class="box-wrp">
+                <div class="link-box"></div>
+                <div class="link-box"></div>
+                <div class="link-box"></div>
+              </div>
+        </div>
+        <div class="box item2">Sidebar</div>
+        <div class="box item3">Main</div>
+        <div class="box item4">Footer</div>
+
+     </div>
+</body>
+</html>
